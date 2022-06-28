@@ -21,6 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('databm', [DatabmController::class, 'index']);
+Route::post('databm/store', [DatabmController::class, 'store']);
 
 
 // Route::get('siswa', SiswaController::class, ['index']);

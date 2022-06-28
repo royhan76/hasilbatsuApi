@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Insertcontroller;
+use App\Http\Controllers\StudViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('/layouts/input');
 });
+// Route::get('/insert', [Insertcontroller::class, 'insertForm']);
+// Route::get('/viewrecord', [StudViewController::class, 'index']);
