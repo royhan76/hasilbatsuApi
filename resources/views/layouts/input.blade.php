@@ -24,7 +24,8 @@
         <h1>INPUT DATA</h1>
         {{-- <h1>Membuat Form dengan Bootstrap | www.malasngoding.com</h1> --}}
         <form class="form-horizontal" action="/create" method="POST" action="/action_page">
-            <input type="hidden", name="_token", value="@php echo csrf_ @endphp">
+            
+            <input type="hidden", name="_token", value="{{ csrf_field() }}">
             <div class="form-group">
                 <label class="control-label col-sm-2" for="nama">Judul:</label>
                 <div class="col-sm-7">
